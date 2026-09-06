@@ -33,3 +33,96 @@ img{
     display: block;
     max-width: 100%;
 }
+
+body{
+    background: var(--background);
+    overflow-x: hidden;
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.site-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(19, 19, 22, 0.88);
+    border-bottom: 1px solid var(--border-soft);
+    backdrop-filter: blur(16px);
+}
+
+.container{
+    width: min(100% - 2rem, var(--container));
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    gap: 24px;
+}
+
+.navbar-brand{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.brand-icon{
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-soft);
+    border-radius: 50%;
+    background: var(--surface-light);
+    color: var(--accent);
+    font-size: 13px;
+
+}
+
+.navbar-brand span{
+    color: var(--accent);
+} 
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-links a{
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-links a:hover,
+.navbar-links a:first-child{
+    background: var(--surface-raised);
+    color: var(--text-primary);
+}
+
+.navbar-button{
+    padding: 8px 14px;
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    background: var(--surface-light);
+    color: var(--text-primary);
+    font-size: 12px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-button:hover{
+    border-color: #424844;
+    color: var(--accent);
+}
