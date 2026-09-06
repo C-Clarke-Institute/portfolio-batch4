@@ -55,9 +55,37 @@
                     </div>
                 </div>
 
-                <article class="terminal-card">
-                    <span>Code</span>
+                                <article class="terminal-card" aria-label="Developer profile code snippet">
+                    <div class="terminal-header">
+                        <div class="terminal-dots" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>developer.config.ts</p>
+                        <p>v2.6</p>
+                    </div>
+
+                    <div class="terminal-body">
+<pre><code><span class="code-comment">// Systems configuration</span>
+<span class="code-keyword">const</span> <span class="code-accent">engineer</span> = {
+  name: <span class="code-text">"Alex Chen"</span>,
+  role: <span class="code-text">"Full Stack Engineer"</span>,
+  focus: [<span class="code-accent">"Distributed Systems"</span>, <span class="code-accent">"UI/UX"</span>],
+  principles: [
+    <span class="code-text">"Type safety by default"</span>,
+    <span class="code-text">"Pragmatic architectural choices"</span>,
+    <span class="code-text">"Speed & low cognitive friction"</span>
+  ],
+  status: <span class="code-success">"Ready to deploy"</span>
+};</code></pre>
+                        <div class="terminal-status">
+                            <span>tsc --noEmit - 0 errors</span>
+                            <strong>verified clean</strong>
+                        </div>
+                    </div>
                 </article>
+
             </div>
         </section>
 
