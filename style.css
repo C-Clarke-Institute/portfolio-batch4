@@ -128,3 +128,107 @@ body{
 }
 
 
+.hero{
+    padding: 160px 0 90px;
+}
+
+.hero-layout{
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    gap: 60px;
+    align-items: center;
+
+}
+
+.hero-content{
+    max-width: 660px;
+}
+
+.status-pill{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom:24px ;
+    padding: 7px 12px;
+    border: 1px solid var(--border-soft);
+    border-radius: 50px;
+    background: var(--surface-light);
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+.status-pill span{
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.hero-title{
+    margin-bottom: 18px;
+    color: var(--text-primary);
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.hero-title span{
+    color: var(--accent);
+}
+
+.hero-description{
+    max-width: 580px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 12px 22px;
+    border: 1px solid transparent ;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.button-primary{
+    background: var(--accent);
+    color: rgb(49, 48, 48);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.button-secondary{
+    background: var(--surface-light);
+    border-color: var(--border-soft);
+    color: var(--text-primary);
+}
+
+.hero-meta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.hero-meta span::before{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    border: 1px solid var(--accent);
+    border-radius: 999px; /*50% */
+}
