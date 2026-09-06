@@ -1,0 +1,35 @@
+:root {
+    --background: #131316;
+    --surface: #18181b;
+    --surface-light: #202024;
+    --surface-raised: #27272a;
+    --text-primary: #f4f4f5;
+    --text-secondary: #c1c8c2;
+    --text-muted: #8b928d;
+    --accent: #accebc;
+    --accent-strong: #88a998;
+    --secondary: #cfbef4;
+    --tertiary: #e3c290;
+    --border: #424844;
+    --border-soft: rgba(66, 72, 68, 0.45);
+    --radius: 12px;
+    --container: 1152px;
+    --shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
